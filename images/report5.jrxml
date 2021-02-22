@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report5" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2a0fb180-cf0a-4128-b303-4c804c5228f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="ea4caf03-e4b0-4f7f-afbe-f018fa5318d1">
+		<queryString>
+			<![CDATA[select * from employees order by department_id]]>
+		</queryString>
+		<field name="EMPLOYEE_ID" class="java.math.BigDecimal"/>
+		<field name="FIRST_NAME" class="java.lang.String"/>
+		<field name="LAST_NAME" class="java.lang.String"/>
+		<field name="EMAIL" class="java.lang.String"/>
+		<field name="PHONE_NUMBER" class="java.lang.String"/>
+		<field name="HIRE_DATE" class="java.sql.Timestamp"/>
+		<field name="JOB_ID" class="java.lang.String"/>
+		<field name="SALARY" class="java.math.BigDecimal"/>
+		<field name="COMMISSION_PCT" class="java.math.BigDecimal"/>
+		<field name="MANAGER_ID" class="java.math.BigDecimal"/>
+		<field name="DEPARTMENT_ID" class="java.math.BigDecimal"/>
+	</subDataset>
+	<parameter name="depto_nro" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from employees where department_id = $P{depto_nro}]]>
+	</queryString>
+	<field name="EMPLOYEE_ID" class="java.math.BigDecimal"/>
+	<field name="FIRST_NAME" class="java.lang.String"/>
+	<field name="LAST_NAME" class="java.lang.String"/>
+	<field name="EMAIL" class="java.lang.String"/>
+	<field name="PHONE_NUMBER" class="java.lang.String"/>
+	<field name="HIRE_DATE" class="java.sql.Timestamp"/>
+	<field name="JOB_ID" class="java.lang.String"/>
+	<field name="SALARY" class="java.math.BigDecimal"/>
+	<field name="COMMISSION_PCT" class="java.math.BigDecimal"/>
+	<field name="MANAGER_ID" class="java.math.BigDecimal"/>
+	<field name="DEPARTMENT_ID" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="20" uuid="d28202f2-268f-422b-a24a-ad96e68d1261"/>
+				<text><![CDATA[EMPLOYEE_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="20" uuid="89638dad-0815-480e-af30-77f228cd418a"/>
+				<text><![CDATA[FIRST_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="20" uuid="54490c1e-3aa5-4ea4-ac7b-353f102132e4"/>
+				<text><![CDATA[LAST_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="20" uuid="4ca56d14-96fe-400d-b34e-7792e7da376c"/>
+				<text><![CDATA[DEPARTMENT_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="20" uuid="3a9d71ae-5de7-4227-9eca-c1042acffa2a"/>
+				<text><![CDATA[PHONE_NUMBER]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="20" uuid="24ac49d5-4465-4ca5-88bf-3bf7b5467bcd"/>
+				<textFieldExpression><![CDATA[$F{EMPLOYEE_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="20" uuid="4c5dc3b8-b634-47be-8d8d-d2334fb13f10"/>
+				<textFieldExpression><![CDATA[$F{FIRST_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="20" uuid="e5d4244a-c098-4a67-885f-7c409e8b0a13"/>
+				<textFieldExpression><![CDATA[$F{LAST_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="20" uuid="49f93aab-efd2-46ac-ace5-4bc7339eb52f"/>
+				<textFieldExpression><![CDATA[$F{PHONE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="20" uuid="5a32186c-fada-4cab-afdb-f9a47df31b46"/>
+				<textFieldExpression><![CDATA[$F{DEPARTMENT_ID}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement key="table 5" style="table 5" x="0" y="20" width="313" height="97" uuid="6e3ad16c-4db7-4a86-92ff-9292a1c9e47d"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="New Dataset 1" uuid="9c92f391-215a-4cbc-a2d2-2d3d3aaa1e58">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="29baf7da-a542-4084-84a3-51f8dd2d98d8">
+						<jr:tableHeader style="table 5_TH" height="30"/>
+						<jr:tableFooter style="table 5_TH" height="30"/>
+						<jr:columnHeader style="table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="7d375ea6-1efa-44cf-af8f-99b06292a884"/>
+								<text><![CDATA[EMPLOYEE_ID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="30"/>
+						<jr:detailCell style="table 5_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="952c8694-8e6d-46d9-80c7-1250708ebfe6"/>
+								<textFieldExpression><![CDATA[$F{EMPLOYEE_ID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="f489c472-39db-4ba5-b11f-1bfdbaf442b5">
+						<jr:tableHeader style="table 5_TH" height="30"/>
+						<jr:tableFooter style="table 5_TH" height="30"/>
+						<jr:columnHeader style="table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="feaf3691-3ab4-4257-9f3a-caf92bc1be30"/>
+								<text><![CDATA[FIRST_NAME]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="30"/>
+						<jr:detailCell style="table 5_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="25cb7b9b-e376-4fb2-b05b-855afefd204e"/>
+								<textFieldExpression><![CDATA[$F{FIRST_NAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="c54ac398-a361-4bc9-95de-96aca225d79b">
+						<jr:tableHeader style="table 5_TH" height="30"/>
+						<jr:tableFooter style="table 5_TH" height="30"/>
+						<jr:columnHeader style="table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="19345d46-de87-48c7-966d-bb9c1253e363"/>
+								<text><![CDATA[LAST_NAME]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="30"/>
+						<jr:detailCell style="table 5_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="8f4934b0-2fd1-4173-883a-24c8947a86bd"/>
+								<textFieldExpression><![CDATA[$F{LAST_NAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="ba14f4b5-17ce-4bd1-8275-e1aee54c8ea3">
+						<jr:tableHeader style="table 5_TH" height="30"/>
+						<jr:tableFooter style="table 5_TH" height="30"/>
+						<jr:columnHeader style="table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="8086958d-ef7d-4094-b6dd-54afa202dcfe"/>
+								<text><![CDATA[SALARY]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="30"/>
+						<jr:detailCell style="table 5_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="4920625a-e55f-4bae-9f18-4f8f927fe900"/>
+								<textFieldExpression><![CDATA[$F{SALARY}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="a66cfef8-287f-4422-ad78-4cfa9f9d625c">
+						<jr:tableHeader style="table 5_TH" height="30"/>
+						<jr:tableFooter style="table 5_TH" height="30"/>
+						<jr:columnHeader style="table 5_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="cbed816d-da74-4988-b194-d386c14dfbcf"/>
+								<text><![CDATA[DEPARTMENT_ID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 5_CH" height="30"/>
+						<jr:detailCell style="table 5_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="8369d17f-8727-48da-ae9e-95fba598eb9a"/>
+								<textFieldExpression><![CDATA[$F{DEPARTMENT_ID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
